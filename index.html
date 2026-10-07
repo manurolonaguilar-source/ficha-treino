@@ -27,11 +27,17 @@ h3{font-size:18px;margin:13px 0 5px;letter-spacing:-.02em}.cue{font-size:12px;li
 .calendar-stats{margin-top:12px;display:flex;gap:10px;flex-wrap:wrap}.mini{background:#f7f3f5;border-radius:12px;padding:10px 12px;font-size:12px;color:var(--muted)}.mini b{color:var(--ink)}
 .notes{margin-top:20px;background:#fff;border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:var(--shadow)}.notes h3{margin:0 0 8px}textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:14px;padding:12px;resize:vertical;outline:0}
 
+.completion-toast{display:none;margin-top:14px;background:linear-gradient(135deg,#eee7f7,#f8f5fb);border:1px solid #d9cbe5;border-radius:18px;padding:15px 16px;color:#60447f;animation:toastIn .28s ease}
+.completion-toast.show{display:flex;align-items:center;gap:12px}
+.completion-toast .toast-icon{width:38px;height:38px;border-radius:12px;background:#7c5aa6;color:#fff;display:grid;place-items:center;flex:0 0 38px;font-size:18px}
+.completion-toast strong{display:block;font-size:13px;line-height:1.35}
+.completion-toast span{display:block;margin-top:2px;font-size:10px;color:#7d747b}
+@keyframes toastIn{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
 .calendar-sub{margin:5px 0 0;color:var(--muted);font-size:12px}.workout-log{margin-top:20px;background:#fff;border:1px solid var(--line);border-radius:24px;padding:20px;box-shadow:var(--shadow)}
 .log-head,.history-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}.log-head h2,.history-head h2{margin:5px 0 5px;font-size:24px;letter-spacing:-.03em}.log-head p{margin:0;color:var(--muted);font-size:12px;line-height:1.5}.status-badge{white-space:nowrap;padding:8px 11px;border-radius:999px;background:#f3f0f7;color:var(--muted);font-size:11px;font-weight:800}.status-badge.done{background:#e9f4ed;color:#31734b}
 .log-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:14px;margin-top:18px}.field-label{display:block;font-size:11px;font-weight:850;color:var(--muted);margin:0 0 7px;text-transform:uppercase;letter-spacing:.06em}
 select,.day-observation{width:100%;border:1px solid var(--line);background:#fff;border-radius:12px;padding:12px;font:inherit;color:var(--ink);outline:0}.day-observation{min-height:90px;resize:vertical;margin-top:2px}.completion-box{display:flex;align-items:end;justify-content:space-between;gap:12px;background:#f8f5fb;border:1px solid #e3d9ee;border-radius:14px;padding:12px}.completion-box strong{display:block;font-size:12px;color:var(--ink);line-height:1.35;max-width:300px}.complete-day,.save-note,.undo-day{border:0;border-radius:11px;padding:11px 13px;font-size:12px;font-weight:850;cursor:pointer;white-space:nowrap}.complete-day{background:var(--pink);color:#fff}.complete-day.done{background:#4d775d}.save-note{background:#eee7f7;color:#60447f}.undo-day{background:#f4f1f3;color:#6d646a}.log-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:10px;flex-wrap:wrap}
- .cardio-box{margin-top:16px;border:1px solid #ddd0e9;background:#f8f5fb;border-radius:18px;padding:14px;display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center}.cardio-icon{width:42px;height:42px;border-radius:13px;background:#7c5aa6;color:#fff;display:grid;place-items:center;font-weight:900}.cardio-info h3{margin:3px 0 4px;font-size:16px;color:#60447f}.cardio-info h3 span{font-size:11px;font-weight:700;color:var(--muted);margin-left:6px}.cardio-info p{margin:0;font-size:11px;line-height:1.45;color:var(--muted)}.cardio-done{border:0;background:#fff;color:#60447f;border:1px solid #d9cbe5;border-radius:11px;padding:10px 12px;font-weight:850;font-size:11px;cursor:pointer;white-space:nowrap}.cardio-done.active{background:#7c5aa6;color:#fff;border-color:#7c5aa6}
+ .cardio-box{margin-top:16px;border:1px solid #ddd0e9;background:#f8f5fb;border-radius:18px;padding:14px;display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center}.cardio-icon{width:42px;height:42px;border-radius:13px;background:#7c5aa6;color:#fff;display:grid;place-items:center;font-weight:900}.cardio-info h3{margin:3px 0 0;font-size:16px;color:#60447f}.cardio-info h3 span{font-size:11px;font-weight:700;color:var(--muted);margin-left:6px}.cardio-info p{display:none}.cardio-done{border:0;background:#fff;color:#60447f;border:1px solid #d9cbe5;border-radius:11px;padding:10px 12px;font-weight:850;font-size:11px;cursor:pointer;white-space:nowrap}.cardio-done.active{background:#7c5aa6;color:#fff;border-color:#7c5aa6}
 .monthly-report{margin-top:20px;background:#fff;border:1px solid var(--line);border-radius:22px;padding:20px;box-shadow:var(--shadow)}
 .report-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}.report-head h2{margin:5px 0;font-size:24px;letter-spacing:-.03em}.report-head p{margin:0;color:var(--muted);font-size:12px}.report-nav{display:flex;gap:6px}
 .report-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:18px}.report-card{background:#f8f5fb;border:1px solid #e3d9ee;border-radius:15px;padding:14px}.report-card span{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:850}.report-card strong{display:block;margin-top:6px;font-size:25px;color:var(--pink)}
@@ -41,9 +47,27 @@ select,.day-observation{width:100%;border:1px solid var(--line);background:#fff;
 .footer{padding:34px 22px 50px;text-align:center;color:var(--muted);font-size:11px}
 @media(max-width:900px){.hero-inner{align-items:flex-start;flex-direction:column}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){.cardio-box{grid-template-columns:auto 1fr}.cardio-done{grid-column:1 / -1;width:100%}.report-cards{grid-template-columns:1fr 1fr}.report-bottom{grid-template-columns:1fr}.report-head{flex-direction:column}.container{padding:15px}.grid{grid-template-columns:1fr}.search{width:100%}.toolbar{align-items:stretch}.day-head{align-items:flex-start;flex-direction:column}.progress{text-align:left}.day{min-height:58px;padding:7px}.day .planned{top:6px;right:6px}.checkmark{font-size:15px}.calendar-panel{padding:14px}.weekday{font-size:9px}.log-grid{grid-template-columns:1fr}.log-head{flex-direction:column}.completion-box{align-items:stretch;flex-direction:column}.complete-day{width:100%}.history-item{grid-template-columns:1fr}.history-done{justify-self:start}}
+
+.cardio-icon{flex:0 0 42px;font-size:20px;line-height:1}
+@media(max-width:620px){
+  .cardio-box{display:flex!important;align-items:center!important;gap:12px!important;flex-wrap:wrap}
+  .cardio-icon{width:42px;height:42px;min-width:42px;display:grid;place-items:center;border-radius:13px;background:#7c5aa6;color:#fff;font-size:19px}
+  .cardio-info{flex:1;min-width:0}
+  .cardio-done{flex:0 0 100%;display:block!important}
+}
 </style><meta name="theme-color" content="#7c5aa6">
-</head><body>
-<header class="hero"><div class="hero-inner"><div><div class="kicker">Minha ficha de academia</div><h1>Glúteos & definição</h1><p>Treino, vídeos de execução e calendário para acompanhar sua constância sem transformar a academia numa planilha de Excel com halteres. 🍑</p></div>
+<style>
+.hero-brand{display:flex;align-items:center;gap:18px}
+.hero-icon{width:78px;height:78px;border-radius:20px;object-fit:cover;box-shadow:0 8px 20px rgba(96,68,127,.12);flex:0 0 78px}
+.hero-brand h1{margin-top:5px}
+@media(max-width:620px){
+  .hero-brand{gap:13px}
+  .hero-icon{width:58px;height:58px;border-radius:16px;flex-basis:58px}
+  .hero-brand h1{font-size:38px;line-height:1.02}
+  .hero .kicker{font-size:10px}
+}
+</style></head><body>
+<header class="hero"><div class="hero-inner"><div class="hero-brand"><img class="hero-icon" src="icon-180.png" alt="Ícone da ficha de academia"><div><div class="kicker">Minha ficha de academia</div><h1>Corpo definido</h1></div></div>
 <div class="stats"><div class="stat"><b>4×</b><span>por semana</span></div><div class="stat"><b>3×</b><span>glúteos</span></div><div class="stat"><b>2×</b><span>abdômen</span></div></div></div></header>
 <main class="container">
 <div class="toolbar"><div class="tabs"><button class="tab active" data-tab="seg">Segunda</button><button class="tab" data-tab="ter">Terça</button><button class="tab" data-tab="qui">Quinta</button><button class="tab" data-tab="sex">Sexta</button><button class="tab" data-tab="todos">Todos</button></div><div class="search">⌕ <input id="search" placeholder="Buscar exercício..."></div></div>
@@ -87,6 +111,10 @@ select,.day-observation{width:100%;border:1px solid var(--line);background:#fff;
     <button id="saveObservation" class="save-note" type="button">Salvar observação</button>
     <button id="undoWorkout" class="undo-day" type="button">Desmarcar conclusão</button>
   </div>
+  <div id="completionToast" class="completion-toast" role="status" aria-live="polite">
+    <div class="toast-icon">✓</div>
+    <div><strong id="completionMessage"></strong><span>Treino concluído. Pode ir em paz. 😂</span></div>
+  </div>
 </section>
 
 <section class="monthly-report" id="monthlyReport">
@@ -94,7 +122,7 @@ select,.day-observation{width:100%;border:1px solid var(--line);background:#fff;
     <div>
       <div class="kicker">Relatório mensal</div>
       <h2 id="reportMonthTitle">Resumo do mês</h2>
-      <p>Seu desempenho é calculado a partir dos treinos concluídos e registrados no calendário.</p>
+      <p>Acompanhe sua constância, força e evolução ao longo dos meses.</p>
     </div>
     <div class="report-nav">
       <button class="cal-btn" id="reportPrev" type="button" aria-label="Relatório do mês anterior">‹</button>
@@ -125,42 +153,96 @@ select,.day-observation{width:100%;border:1px solid var(--line);background:#fff;
 </main>
 <footer class="footer">Os cartões mostram a prévia do vídeo do próprio YouTube e levam diretamente para o vídeo escolhido. Assim o painel não depende do player incorporado e evita o erro 153. </footer>
 <script>
+
+const COMPLETION_PHRASES = {
+  seg: [
+    'Dei o meu mínimo e esse foi meu máximo.',
+    'Treino de perna feito. A escada que lute amanhã.',
+    'Glúteo trabalhado. Agora é esperar o investimento render.',
+    'Fui treinar perna e saí com duas pernas. Por enquanto.',
+    'Hoje foi glúteo. Amanhã eu descubro se ainda tenho mobilidade.',
+    'O treino acabou. Minhas pernas ainda não sabem.'
+  ],
+  ter: [
+    'Costas feitas. Agora é torcer pra postura vir junto.',
+    'Hoje teve costas. O shape de blogueira que lute.',
+    'Ombro treinado. Agora é andar por aí ocupando espaço.',
+    'Puxei, empurrei e sobrevivi. Tá pago.',
+    'Costas e braços em dia. O resto a gente resolve depois.',
+    'Mais um treino que eu fiz na base do “já que eu vim”.'
+  ],
+  qui: [
+    'Agachei, sofri e aparentemente sobrevivi.',
+    'Perna feita. Abdômen feito. Minha dignidade ficou lá.',
+    'Hoje o treino veio com ódio no coração.',
+    'Glúteo + perna + abdômen. Claramente eu não tinha nada melhor pra fazer.',
+    'Fiz tudo. Agora só falta o shape colaborar.',
+    'Esse treino não foi brincadeira. Infelizmente eu também não estava brincando.'
+  ],
+  sex: [
+    'Sextou do jeito que ninguém pediu: posterior e glúteo.',
+    'Glúteo feito. Agora oficialmente acabou a semana.',
+    'Fechei a semana trabalhando o patrimônio.',
+    'Posterior destruído com sucesso. Bom fim de semana pra mim.',
+    'Sexta-feira e eu escolhendo sofrer voluntariamente.',
+    'Último treino da semana. Agora ninguém me tira do sofá.'
+  ],
+  outro: [
+    'O treino aconteceu. Tá ótimo, já fiz minha parte.',
+    'Não amei, não odiei. Só fui mesmo.',
+    'Compareci. O desempenho a gente não comenta.',
+    'Fiz minha parte. Agora o resultado que se vire.',
+    'Mais um treino que eu quase não fiz. Quase.',
+    'Não foi força, foi na base do “já que eu vim”.'
+  ]
+};
+function showCompletionMessage(workout){
+  const list = COMPLETION_PHRASES[workout] || COMPLETION_PHRASES.outro;
+  const msg = list[Math.floor(Math.random() * list.length)];
+  const toast = document.getElementById('completionToast');
+  const el = document.getElementById('completionMessage');
+  if(!toast || !el) return;
+  el.textContent = msg;
+  toast.classList.remove('show');
+  void toast.offsetWidth;
+  toast.classList.add('show');
+}
+
 const DATA=[
- {id:'seg',label:'SEGUNDA',title:'Glúteos + posteriores',ex:[
-  ['Hip thrust / elevação pélvica','3 × 10–12','90–120 s','Suba pelo quadril e contraia o glúteo no topo.','eYXN9SW2j4I','Hip Thrust • Olymp’Fit'],
-  ['Mesa flexora','3 × 10–12','60–90 s','Controle a volta do movimento.','6I0NiRc6yww','Leg Curl • demonstração'],
-  ['Stiff com halteres','3 × 10–12','90 s','Leve o quadril para trás e mantenha a coluna neutra.','QFbZevA7dps','Dumbbell Romanian Deadlift • NASM'],
-  ['Cadeira abdutora','3 × 15–20','45–60 s','Movimento controlado, sem impulso.','HngwgIoABFg','Hip Abduction Machine • demonstração'],
-  ['Glúteo no cabo','3 × 12–15 / perna','45–60 s','Leve a perna para trás sem arquear a lombar.','5jJNfIlKTmg','Cable Glute Kickback • Colossus Fitness'],
-  ['Flexora sentada','2 × 12–15','60 s','Controle a fase de retorno.','_2Kd0d-JEUM','Seated Leg Curl • NASM']
- ]},
- {id:'ter',label:'TERÇA',title:'Costas + ombros + braços',ex:[
-  ['Puxada frontal','3 × 10–12','75–90 s','Leve os cotovelos para baixo.','D8b3OVbRfwE','Lat Pulldown • QMotion'],
-  ['Remada baixa','3 × 10–12','75–90 s','Tronco estável, peito aberto.','gmy4V8yJszs','Seated Row • QMotion'],
-  ['Remada unilateral','3 × 10–12 / lado','60–75 s','Puxe em direção ao quadril sem girar o tronco.','gmy4V8yJszs','Seated Row • referência de execução'],
-  ['Elevação lateral','3 × 12–15','45–60 s','Use carga leve e controle a descida.','4hTUCDUQaNA','Dumbbell Lateral Raise • Renaissance Periodization'],
-  ['Desenvolvimento de ombros','3 × 10–12','75–90 s','Não compense com a lombar.','xDnOlHT950k','Shoulder Press • QMotion'],
-  ['Face pull','3 × 12–15','45–60 s','Puxe a corda em direção ao rosto.','BzeAjF1EeCY','Face Pulls • QMotion'],
-  ['Rosca alternada','2 × 10–12','60 s','Evite balançar o tronco.','Ni-c7ndLBTU','Dumbbell Curl • demonstração'],
-  ['Tríceps na polia','2 × 10–12','60 s','Mantenha os cotovelos próximos ao corpo.','zfgZMh8UBcw','Tricep Pulldown • QMotion']
- ]},
- {id:'qui',label:'QUINTA',title:'Quadríceps + glúteos',ex:[
-  ['Agachamento no Smith','3 × 8–12','90–120 s','Comece leve e priorize a técnica.','2XaW-WQ2LBY','Smith Machine Squat • FISIculturismo.com.br'],
-  ['Leg press','3 × 10–12','90 s','Pés firmes e joelhos acompanhando os pés.','3R0SOJ3alTA','Leg Press • Bodybuilding.com'],
-  ['Cadeira extensora','3 × 12–15','60 s','Ajuste a máquina e controle a descida.','Dllq4Vd-Xek','Leg Extension • QMotion'],
-  ['Afundo no Smith','2 × 10 / perna','75–90 s','Passo estável e joelho acompanhando o pé.','2XaW-WQ2LBY','Smith Lunge • referência de execução'],
-  ['Hip thrust','3 × 10–12','90 s','Carga moderada e movimento limpo.','eYXN9SW2j4I','Hip Thrust • Olymp’Fit'],
-  ['Abdutora','3 × 15–20','45–60 s','Controle a abertura e o retorno.','HngwgIoABFg','Hip Abduction Machine • demonstração'],
-  ['Panturrilha','3 × 12–15','60 s','Amplitude confortável e descida controlada.','hiI-JdtEGIs','Leg Press • referência de execução']
- ]},
- {id:'sex',label:'SEXTA',title:'Glúteos + posteriores',ex:[
-  ['Hip thrust','3 × 8–12','90–120 s','Acompanhe a evolução da carga.','eYXN9SW2j4I','Hip Thrust • Olymp’Fit'],
-  ['Stiff','3 × 10–12','90 s','Desça mantendo a coluna neutra.','QFbZevA7dps','Dumbbell Romanian Deadlift • NASM'],
-  ['Cadeira flexora','3 × 10–15','60–75 s','Controle a fase de retorno.','6I0NiRc6yww','Leg Curl • demonstração'],
-  ['Agachamento sumô','3 × 10–12','75–90 s','Base confortável e joelhos acompanhando os pés.','hOhbaafYnr0','Sumo Squat • demonstração'],
-  ['Glúteo no cabo','3 × 12–15 / perna','45–60 s','Não transforme o movimento em balanço.','5jJNfIlKTmg','Cable Glute Kickback • Colossus Fitness'],
-  ['Abdutora','3 × 15–20','45–60 s','Finalize com controle.','HngwgIoABFg','Hip Abduction Machine • demonstração']
- ]}
+{id:'seg',label:'SEGUNDA',title:'Pernas + glúteos',ex:[
+['Hip thrust','3 × 8–12','90–120 s','Suba controlando e contraia o glúteo no topo.','eYXN9SW2j4I','Hip Thrust'],
+['Cadeira flexora','3 × 10–15','60–75 s','Controle a volta e mantenha o quadril apoiado.','6I0NiRc6yww','Leg Curl'],
+['Stiff com halteres','3 × 10–12','90 s','Coluna neutra e movimento vindo do quadril.','fOvQ6wZ75sc','Romanian Deadlift'],
+['Leg press','3 × 10–12','90 s','Desça com controle e não deixe o joelho colapsar.','3R0SOJ3alTA','Leg Press'],
+['Cadeira abdutora','3 × 15–20','45–60 s','Movimento controlado, sem balançar o tronco.','HngwgIoABFg','Hip Abduction'],
+['Panturrilha','3 × 12–15','60 s','Faça amplitude confortável e controle a descida.','3R0SOJ3alTA','Calf Raise']
+]},
+{id:'ter',label:'TERÇA',title:'Costas + ombros + braços',ex:[
+['Puxada frontal','3 × 10–12','75–90 s','Puxe em direção ao peito sem jogar o corpo para trás.','GL3h256d6JM','Lat Pulldown'],
+['Remada baixa','3 × 10–12','75–90 s','Leve os cotovelos para trás e mantenha o peito aberto.','xQNrFHEMhI4','Seated Cable Row'],
+['Remada unilateral com halter','3 × 10–12','60–75 s','Apoie-se e puxe o cotovelo em direção ao quadril.','xQNrFHEMhI4','One Arm Row'],
+['Elevação lateral','3 × 12–15','45–60 s','Suba até a linha dos ombros sem impulso.','4hTUCDUQaNA','Dumbbell Lateral Raise'],
+['Desenvolvimento na máquina','3 × 10–12','75–90 s','Movimento firme e sem arquear excessivamente a lombar.','3R14MnZbcpw','Machine Shoulder Press'],
+['Rosca direta com halteres','2 × 10–12','60 s','Cotovelos próximos ao corpo.','4hTUCDUQaNA','Dumbbell Curl'],
+['Tríceps na polia','2 × 10–12','60 s','Mantenha os cotovelos junto ao corpo.','tkLTR4b6cAk','Triceps Pushdown']
+]},
+{id:'qui',label:'QUINTA',title:'Pernas + glúteos + abdômen',ex:[
+['Agachamento no Smith','3 × 8–12','90–120 s','Desça com controle e mantenha os pés firmes.','2XaW-WQ2LBY','Smith Machine Squat'],
+['Cadeira extensora','3 × 12–15','60 s','Estenda controlando e evite chutar o peso.','3R0SOJ3alTA','Leg Extension'],
+['Afundo no Smith','2 × 10 cada perna','75–90 s','Passo confortável e joelho acompanhando a ponta do pé.','2XaW-WQ2LBY','Smith Lunge'],
+['Hip thrust','3 × 10–12','90 s','Pausa curta no topo e descida controlada.','eYXN9SW2j4I','Hip Thrust'],
+['Cadeira abdutora','3 × 15–20','45–60 s','Controle a abertura e a volta.','HngwgIoABFg','Hip Abduction'],
+['Abdominal na máquina','3 × 12–15','45–60 s','Flexione o tronco sem puxar o pescoço.','xQNrFHEMhI4','Machine Crunch'],
+['Prancha','3 × 30–45 s','45 s','Corpo alinhado e abdômen contraído.','xQNrFHEMhI4','Plank']
+]},
+{id:'sex',label:'SEXTA',title:'Glúteos + posterior + abdômen',ex:[
+['Hip thrust','3 × 8–12','90–120 s','Use uma carga que permita amplitude e controle.','eYXN9SW2j4I','Hip Thrust'],
+['Cadeira flexora','3 × 10–15','60–75 s','Segure a volta e evite tirar o quadril do banco.','6I0NiRc6yww','Leg Curl'],
+['Stiff com halteres','3 × 10–12','90 s','Leve o quadril para trás e mantenha a coluna neutra.','fOvQ6wZ75sc','Romanian Deadlift'],
+['Agachamento sumô','3 × 10–12','75–90 s','Pés abertos e joelhos acompanhando a direção dos pés.','hOhbaafYnr0','Sumo Squat'],
+['Coice no cabo','3 × 12–15 cada perna','45–60 s','Movimento curto e controlado, sem girar o quadril.','HngwgIoABFg','Cable Glute Kickback'],
+['Abdominal na polia','3 × 12–15','45–60 s','Enrole o tronco usando o abdômen, não os braços.','tkLTR4b6cAk','Cable Crunch']
+]}
 ];
 
 let active='seg', calDate=new Date(), selectedDate=null;
@@ -169,11 +251,11 @@ const months=['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Ago
 const weekDays=['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'];
 const workoutNames={seg:'Segunda • Glúteos + posteriores',ter:'Terça • Costas + ombros + braços',qui:'Quinta • Quadríceps + glúteos',sex:'Sexta • Glúteos + posteriores',outro:'Outro treino'};
 const cardioPlans={
- seg:['Esteira','15–20 min','Caminhada com inclinação leve/moderada. Ritmo confortável, sem transformar o treino de glúteos em uma maratona.'],
- ter:['Bicicleta','15–20 min','Ritmo moderado e contínuo. Resistência confortável, mantendo cadência estável.'],
- qui:['Esteira','15–20 min','Caminhada com inclinação leve. Depois do treino de pernas, priorize constância em vez de velocidade.'],
- sex:['Bicicleta','15–20 min','Ritmo moderado. Se as pernas estiverem muito cansadas, faça 10–15 min bem leves.'],
- outro:['Cardio livre','15–20 min','Escolha entre esteira ou bicicleta em ritmo confortável.']
+ seg:['Esteira','15–20 min',''],
+ ter:['Bicicleta','15–20 min',''],
+ qui:['Esteira','15–20 min',''],
+ sex:['Bicicleta','15–20 min',''],
+ outro:['Cardio livre','15–20 min','']
 };
 function keyDate(y,m,d){return `${y}-${String(m+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`}
 function todayKey(){const n=new Date();return keyDate(n.getFullYear(),n.getMonth(),n.getDate())}
@@ -193,7 +275,7 @@ function cardHTML(day,e,i){
 }
 function render(){
  const q=search.value.trim().toLowerCase(), ds=active==='todos'?DATA:DATA.filter(d=>d.id===active);
- content.innerHTML=ds.map(day=>{const items=day.ex.filter(e=>(e[0]+' '+e[3]).toLowerCase().includes(q));if(!items.length)return '';const cardio=cardioPlans[day.id]||cardioPlans.outro; return `<div class="day-head"><div><div class="kicker">${day.label}</div><h2>${day.title}</h2><p>Aqueça 5–8 min antes do primeiro exercício. Data selecionada: <strong>${selectedDate?formatDateShort(selectedDate):'escolha no calendário'}</strong></p></div><div class="progress"><strong id="prog-${day.id}">0%</strong><br>concluído</div></div><div class="grid">${items.map((e,i)=>cardHTML(day,e,i)).join('')}</div><div class="cardio-box"><div class="cardio-icon">♥</div><div class="cardio-info"><div class="kicker">Cardio do dia</div><h3>${cardio[0]} <span>${cardio[1]}</span></h3><p>${cardio[2]}</p></div><button type="button" class="cardio-done" data-cardio="${day.id}">○ Fiz o cardio</button></div>`}).join('');
+ content.innerHTML=ds.map(day=>{const items=day.ex.filter(e=>(e[0]+' '+e[3]).toLowerCase().includes(q));if(!items.length)return '';const cardio=cardioPlans[day.id]||cardioPlans.outro; return `<div class="day-head"><div><div class="kicker">${day.label}</div><h2>${day.title}</h2><p>Aqueça 5–8 min antes do primeiro exercício. Data selecionada: <strong>${selectedDate?formatDateShort(selectedDate):'escolha no calendário'}</strong></p></div><div class="progress"><strong id="prog-${day.id}">0%</strong><br>concluído</div></div><div class="grid">${items.map((e,i)=>cardHTML(day,e,i)).join('')}</div><div class="cardio-box"><div class="cardio-icon" aria-hidden="true">🏃‍♀️</div><div class="cardio-info"><div class="kicker">Cardio do dia</div><h3>${cardio[0]} <span>${cardio[1]}</span></h3></div><button type="button" class="cardio-done" data-cardio="${day.id}">○ Fiz o cardio</button></div>`}).join('');
  bind(); updateProgress();
 }
 function bind(){
@@ -348,6 +430,7 @@ document.getElementById('completeWorkout').onclick=()=>{
  r.completedAt=new Date().toISOString();
  saveRecord(selectedDate,r);
  updateLogUI();renderCalendar();renderHistory();renderReport();render();
+ showCompletionMessage(r.workout);
 };
 document.getElementById('saveObservation').onclick=()=>{
  if(!selectedDate)return;
