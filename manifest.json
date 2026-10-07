@@ -1,0 +1,16 @@
+{
+  "name": "Minha Ficha de Treino",
+  "short_name": "FIT",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f8f5fb",
+  "theme_color": "#7c5aa6",
+  "icons": [
+    {
+      "src": "icon-180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
