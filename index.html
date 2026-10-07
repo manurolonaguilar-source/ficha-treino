@@ -31,10 +31,15 @@ h3{font-size:18px;margin:13px 0 5px;letter-spacing:-.02em}.cue{font-size:12px;li
 .log-head,.history-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}.log-head h2,.history-head h2{margin:5px 0 5px;font-size:24px;letter-spacing:-.03em}.log-head p{margin:0;color:var(--muted);font-size:12px;line-height:1.5}.status-badge{white-space:nowrap;padding:8px 11px;border-radius:999px;background:#f3f0f7;color:var(--muted);font-size:11px;font-weight:800}.status-badge.done{background:#e9f4ed;color:#31734b}
 .log-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:14px;margin-top:18px}.field-label{display:block;font-size:11px;font-weight:850;color:var(--muted);margin:0 0 7px;text-transform:uppercase;letter-spacing:.06em}
 select,.day-observation{width:100%;border:1px solid var(--line);background:#fff;border-radius:12px;padding:12px;font:inherit;color:var(--ink);outline:0}.day-observation{min-height:90px;resize:vertical;margin-top:2px}.completion-box{display:flex;align-items:end;justify-content:space-between;gap:12px;background:#f8f5fb;border:1px solid #e3d9ee;border-radius:14px;padding:12px}.completion-box strong{display:block;font-size:12px;color:var(--ink);line-height:1.35;max-width:300px}.complete-day,.save-note,.undo-day{border:0;border-radius:11px;padding:11px 13px;font-size:12px;font-weight:850;cursor:pointer;white-space:nowrap}.complete-day{background:var(--pink);color:#fff}.complete-day.done{background:#4d775d}.save-note{background:#eee7f7;color:#60447f}.undo-day{background:#f4f1f3;color:#6d646a}.log-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:10px;flex-wrap:wrap}
+ .monthly-report{margin-top:20px;background:#fff;border:1px solid var(--line);border-radius:22px;padding:20px;box-shadow:var(--shadow)}
+.report-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}.report-head h2{margin:5px 0;font-size:24px;letter-spacing:-.03em}.report-head p{margin:0;color:var(--muted);font-size:12px}.report-nav{display:flex;gap:6px}
+.report-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:18px}.report-card{background:#f8f5fb;border:1px solid #e3d9ee;border-radius:15px;padding:14px}.report-card span{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:850}.report-card strong{display:block;margin-top:6px;font-size:25px;color:var(--pink)}
+.report-bottom{display:grid;grid-template-columns:1.2fr .8fr;gap:12px;margin-top:14px}.report-label{font-size:11px;font-weight:850;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:8px}.report-breakdown{display:flex;flex-wrap:wrap;gap:7px}.report-chip{border:1px solid #e3d9ee;background:#fff;border-radius:999px;padding:8px 10px;font-size:11px;color:#60447f;font-weight:750}.report-highlight{background:#eee7f7;border-radius:15px;padding:14px;font-size:12px;line-height:1.5;color:#60447f;display:flex;align-items:center}
+.history-item{border:1px solid #eee4e9}.history-item .history-main{min-width:0}.history-open{border:0;background:transparent;text-align:left;padding:0;cursor:pointer;font:inherit;min-width:0}.delete-history{border:0;background:#f5eef7;color:#725681;border-radius:9px;padding:8px 9px;font-size:11px;font-weight:850;cursor:pointer}.delete-history:hover{background:#eadff1}
 .history-panel{margin-top:20px;background:#fff;border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:var(--shadow)}.history-head{align-items:center}.history-head h2{font-size:20px}.history-head>span{font-size:11px;color:var(--muted)}.history-list{display:grid;gap:8px;margin-top:12px}.history-item{display:grid;grid-template-columns:100px 1fr auto;gap:12px;align-items:center;padding:11px 12px;border:1px solid #eee4e9;border-radius:13px;background:#fbf9fd}.history-date{font-weight:850;font-size:12px}.history-workout{font-size:12px;color:var(--ink)}.history-obs{font-size:11px;color:var(--muted);margin-top:3px;line-height:1.4}.history-done{font-size:11px;font-weight:850;color:#4d775d}.empty-history{padding:18px;text-align:center;color:var(--muted);font-size:12px;background:#f8f5fb;border-radius:13px}
 .footer{padding:34px 22px 50px;text-align:center;color:var(--muted);font-size:11px}
 @media(max-width:900px){.hero-inner{align-items:flex-start;flex-direction:column}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:620px){.container{padding:15px}.grid{grid-template-columns:1fr}.search{width:100%}.toolbar{align-items:stretch}.day-head{align-items:flex-start;flex-direction:column}.progress{text-align:left}.day{min-height:58px;padding:7px}.day .planned{top:6px;right:6px}.checkmark{font-size:15px}.calendar-panel{padding:14px}.weekday{font-size:9px}.log-grid{grid-template-columns:1fr}.log-head{flex-direction:column}.completion-box{align-items:stretch;flex-direction:column}.complete-day{width:100%}.history-item{grid-template-columns:1fr}.history-done{justify-self:start}}
+@media(max-width:620px){.report-cards{grid-template-columns:1fr 1fr}.report-bottom{grid-template-columns:1fr}.report-head{flex-direction:column}.container{padding:15px}.grid{grid-template-columns:1fr}.search{width:100%}.toolbar{align-items:stretch}.day-head{align-items:flex-start;flex-direction:column}.progress{text-align:left}.day{min-height:58px;padding:7px}.day .planned{top:6px;right:6px}.checkmark{font-size:15px}.calendar-panel{padding:14px}.weekday{font-size:9px}.log-grid{grid-template-columns:1fr}.log-head{flex-direction:column}.completion-box{align-items:stretch;flex-direction:column}.complete-day{width:100%}.history-item{grid-template-columns:1fr}.history-done{justify-self:start}}
 </style><meta name="theme-color" content="#7c5aa6">
 </head><body>
 <header class="hero"><div class="hero-inner"><div><div class="kicker">Minha ficha de academia</div><h1>Glúteos & definição</h1><p>Treino, vídeos de execução e calendário para acompanhar sua constância sem transformar a academia numa planilha de Excel com halteres. 🍑</p></div>
@@ -80,6 +85,33 @@ select,.day-observation{width:100%;border:1px solid var(--line);background:#fff;
   <div class="log-actions">
     <button id="saveObservation" class="save-note" type="button">Salvar observação</button>
     <button id="undoWorkout" class="undo-day" type="button">Desmarcar conclusão</button>
+  </div>
+</section>
+
+<section class="monthly-report" id="monthlyReport">
+  <div class="report-head">
+    <div>
+      <div class="kicker">Relatório mensal</div>
+      <h2 id="reportMonthTitle">Resumo do mês</h2>
+      <p>Seu desempenho é calculado a partir dos treinos concluídos e registrados no calendário.</p>
+    </div>
+    <div class="report-nav">
+      <button class="cal-btn" id="reportPrev" type="button" aria-label="Relatório do mês anterior">‹</button>
+      <button class="cal-btn" id="reportNext" type="button" aria-label="Relatório do próximo mês">›</button>
+    </div>
+  </div>
+  <div class="report-cards">
+    <div class="report-card"><span>Treinos concluídos</span><strong id="reportCompleted">0</strong></div>
+    <div class="report-card"><span>Dias planejados</span><strong id="reportPlanned">0</strong></div>
+    <div class="report-card"><span>Frequência</span><strong id="reportRate">0%</strong></div>
+    <div class="report-card"><span>Observações</span><strong id="reportNotes">0</strong></div>
+  </div>
+  <div class="report-bottom">
+    <div>
+      <div class="report-label">Treinos por dia</div>
+      <div id="reportBreakdown" class="report-breakdown"></div>
+    </div>
+    <div class="report-highlight" id="reportHighlight">Comece a registrar seus treinos para montar seu relatório. 💜</div>
   </div>
 </section>
 
@@ -187,6 +219,7 @@ function selectDate(k){
  updateLogUI();
  renderCalendar();
  renderHistory();
+ renderReport();
  render();
  document.getElementById('workoutLog').scrollIntoView({behavior:'smooth',block:'start'});
 }
@@ -214,25 +247,76 @@ function renderCalendar(){
  const total=allKeys.reduce((n,k)=>n+(getRecord(k)?.completed?1:0),0);
  document.getElementById('monthCount').textContent=trained;document.getElementById('totalCount').textContent=total;document.getElementById('registeredCount').textContent=registered;
 }
+function monthKeyFromDate(d){return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`}
+function recordsForMonth(y,m){
+ const prefix=`${y}-${String(m+1).padStart(2,'0')}-`;
+ return Object.keys(localStorage).filter(k=>k.startsWith('workout-'+prefix)).map(k=>({date:k.slice(8),...getRecord(k)})).filter(x=>x.date&&x.completed).sort((a,b)=>b.date.localeCompare(a.date));
+}
+function plannedDaysInMonth(y,m){
+ let n=0, days=new Date(y,m+1,0).getDate();
+ for(let d=1;d<=days;d++){const dow=new Date(y,m,d).getDay();if([1,2,4,5].includes(dow))n++}
+ return n;
+}
+function renderReport(){
+ const y=calDate.getFullYear(),m=calDate.getMonth(), records=recordsForMonth(y,m), planned=plannedDaysInMonth(y,m);
+ const rate=planned?Math.min(100,Math.round(records.length/planned*100)):0;
+ document.getElementById('reportMonthTitle').textContent=`${months[m]} ${y}`;
+ document.getElementById('reportCompleted').textContent=records.length;
+ document.getElementById('reportPlanned').textContent=planned;
+ document.getElementById('reportRate').textContent=rate+'%';
+ document.getElementById('reportNotes').textContent=records.filter(r=>r.observation).length;
+ const counts={};
+ records.forEach(r=>{counts[r.workout]=(counts[r.workout]||0)+1});
+ const chips=Object.entries(counts).map(([k,v])=>`<span class="report-chip">${escapeHTML(workoutNames[k]||k)}: ${v}</span>`).join('');
+ document.getElementById('reportBreakdown').innerHTML=chips||'<span class="report-chip">Nenhum treino concluído ainda</span>';
+ let highlight='Comece a registrar seus treinos para montar seu relatório. 💜';
+ if(records.length){
+   if(rate>=90) highlight=`${records.length} treinos concluídos. Frequência excelente neste mês! 💜`;
+   else if(rate>=70) highlight=`${records.length} treinos concluídos. Você está mantendo uma ótima constância. 💜`;
+   else highlight=`${records.length} treinos concluídos. Já temos uma base, agora vamos buscar mais constância no próximo treino. 💜`;
+ }
+ document.getElementById('reportHighlight').textContent=highlight;
+}
+function deleteWorkoutRecord(k){
+ if(!confirm(`Excluir o registro de ${formatDateShort(k)}? Isso remove a conclusão, o treino e a observação desse dia.`))return;
+ localStorage.removeItem(recordKey(k));
+ const prefix='check-'+k+'-';
+ Object.keys(localStorage).filter(x=>x.startsWith(prefix)).forEach(x=>localStorage.removeItem(x));
+ if(selectedDate===k){
+   document.getElementById('dayObservation').value='';
+   updateLogUI();
+ }
+ renderCalendar();renderHistory();renderReport();render();
+}
 function renderHistory(){
  const records=Object.keys(localStorage).filter(k=>k.startsWith('workout-')).map(k=>({date:k.slice(8),...getRecord(k)})).filter(x=>x.date&&x.completed).sort((a,b)=>b.date.localeCompare(a.date));
  const list=document.getElementById('historyList');document.getElementById('historyCount').textContent=records.length+' registrados';
  if(!records.length){list.innerHTML='<div class="empty-history">Ainda não há treinos concluídos. Quando você finalizar um dia, ele aparecerá aqui. 💗</div>';return}
- list.innerHTML=records.slice(0,8).map(r=>`<button type="button" class="history-item" data-history-date="${r.date}"><div class="history-date">${formatDateShort(r.date)}</div><div><div class="history-workout">${workoutNames[r.workout]||r.workout}</div>${r.observation?`<div class="history-obs">${escapeHTML(r.observation)}</div>`:''}</div><div class="history-done">✓ Concluído</div></button>`).join('');
+ list.innerHTML=records.slice(0,12).map(r=>`<div class="history-item">
+   <button type="button" class="history-open" data-history-date="${r.date}">
+     <div class="history-date">${formatDateShort(r.date)}</div>
+     <div class="history-main"><div class="history-workout">${escapeHTML(workoutNames[r.workout]||r.workout)}</div>${r.observation?`<div class="history-obs">${escapeHTML(r.observation)}</div>`:''}</div>
+   </button>
+   <div class="history-done">✓ Concluído</div>
+   <button type="button" class="delete-history" data-delete-date="${r.date}" aria-label="Excluir registro de ${formatDateShort(r.date)}">Excluir</button>
+ </div>`).join('');
  document.querySelectorAll('[data-history-date]').forEach(b=>b.onclick=()=>selectDate(b.dataset.historyDate));
+ document.querySelectorAll('[data-delete-date]').forEach(b=>b.onclick=()=>deleteWorkoutRecord(b.dataset.deleteDate));
 }
 function escapeHTML(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]))}
 
 document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');active=b.dataset.tab;render()});
-document.getElementById('prevMonth').onclick=()=>{calDate.setMonth(calDate.getMonth()-1);renderCalendar()};
-document.getElementById('nextMonth').onclick=()=>{calDate.setMonth(calDate.getMonth()+1);renderCalendar()};
+document.getElementById('prevMonth').onclick=()=>{calDate.setMonth(calDate.getMonth()-1);renderCalendar();renderReport()};
+document.getElementById('nextMonth').onclick=()=>{calDate.setMonth(calDate.getMonth()+1);renderCalendar();renderReport()};
+document.getElementById('reportPrev').onclick=()=>{calDate.setMonth(calDate.getMonth()-1);renderCalendar();renderReport()};
+document.getElementById('reportNext').onclick=()=>{calDate.setMonth(calDate.getMonth()+1);renderCalendar();renderReport()};
 search.oninput=render;
 
 document.getElementById('workoutSelect').onchange=()=>{
  if(!selectedDate)return;
  const r=getRecord(selectedDate)||{completed:false,observation:''};
  r.workout=document.getElementById('workoutSelect').value;
- saveRecord(selectedDate,r);renderCalendar();renderHistory();updateLogUI();
+ saveRecord(selectedDate,r);renderCalendar();renderHistory();renderReport();updateLogUI();
 };
 document.getElementById('completeWorkout').onclick=()=>{
  if(!selectedDate)selectDate(todayKey());
@@ -242,7 +326,7 @@ document.getElementById('completeWorkout').onclick=()=>{
  r.completed=true;
  r.completedAt=new Date().toISOString();
  saveRecord(selectedDate,r);
- updateLogUI();renderCalendar();renderHistory();render();
+ updateLogUI();renderCalendar();renderHistory();renderReport();render();
 };
 document.getElementById('saveObservation').onclick=()=>{
  if(!selectedDate)return;
@@ -251,13 +335,13 @@ document.getElementById('saveObservation').onclick=()=>{
  r.observation=document.getElementById('dayObservation').value.trim();
  saveRecord(selectedDate,r);
  document.getElementById('selectedDateHint').textContent='Observação salva neste dia.';
- renderCalendar();renderHistory();updateLogUI();
+ renderCalendar();renderHistory();renderReport();updateLogUI();
 };
 document.getElementById('undoWorkout').onclick=()=>{
  if(!selectedDate)return;
  const r=getRecord(selectedDate);if(!r)return;
  r.completed=false;saveRecord(selectedDate,r);
- updateLogUI();renderCalendar();renderHistory();
+ updateLogUI();renderCalendar();renderHistory();renderReport();
 };
 
 const notes=document.getElementById('notes');notes.value=localStorage.getItem('notes')||'';notes.oninput=()=>localStorage.setItem('notes',notes.value);
@@ -266,5 +350,6 @@ selectedDate=todayKey();
 document.getElementById('workoutSelect').value=plannedWorkoutForDate(selectedDate);
 selectDate(selectedDate);
 renderHistory();
+renderReport();
 
 </script></body></html>
